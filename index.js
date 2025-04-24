@@ -14,7 +14,7 @@ const session=require('express-session')
 const app = express();
 
 connectDB()
-const allowedOrigins = "frontend-secure-her.vercel.app";
+const allowedOrigins = "https://frontend-secure-her.vercel.app";
 
 app.use(cors({
     origin: allowedOrigins, 
