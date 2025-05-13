@@ -1,0 +1,82 @@
+## 📄 Environment Variables (.env)
+
+This project uses a `.env` file to securely store sensitive configuration details. Below is a description of all the environment variables used in this project.
+
+---
+
+### 🔌 Server Configuration
+
+| Variable | Description |
+|----------|-------------|
+| `PORT` | Port number on which the backend server will run. Default is `5000`. |
+
+---
+
+### 🌐 Database Configuration
+
+| Variable | Description |
+|----------|-------------|
+| `MONGO_URI` | MongoDB connection URI for connecting to MongoDB Atlas. Contains username, password, and cluster information. |
+
+---
+
+### 🗺️ Google Maps API
+
+| Variable | Description |
+|----------|-------------|
+| `GOOGLE_MAPS_API_KEY` | Google Maps API Key used for geolocation and maps-related features. |
+
+---
+
+### 🔐 Authentication
+
+| Variable | Description |
+|----------|-------------|
+| `JWT_SECRET_KEY` | Secret key used for generating and verifying JWT tokens for authentication. |
+
+---
+
+### ☁️ Cloudinary (Media Uploads)
+
+| Variable | Description |
+|----------|-------------|
+| `CLOUDINARY_CLOUD_NAME` | Cloud name used for Cloudinary image uploads. |
+| `CLOUDINARY_API_KEY` | API Key for accessing Cloudinary services. |
+| `CLOUDINARY_API_SECRET` | Secret key for accessing Cloudinary securely. |
+| `CLOUDINARY_URL` | Optional Cloudinary URL format for SDKs. |
+
+---
+
+### 📧 Email Service (Nodemailer)
+
+| Variable | Description |
+|----------|-------------|
+| `EMAIL_USER` | Email address used to send mails (OTP, confirmation, etc). |
+| `EMAIL_PASS` | App-specific password or email access token used by Nodemailer. |
+
+---
+
+### 📞 Twilio (SMS/OTP)
+
+| Variable | Description |
+|----------|-------------|
+| `TWILIO_ACCOUNT_SID` | Twilio Account SID for sending OTPs/messages. |
+| `TWILIO_AUTH_TOKEN` | Twilio Auth Token for authentication. |
+| `TWILIO_AUTH_NUMBER` | Phone number provided by Twilio to send SMS. |
+
+---
+
+### 🌍 Frontend URL
+
+| Variable | Description |
+|----------|-------------|
+| `FRONTEND_URL` | URL of the frontend application (used in CORS, email links, redirects, etc). |
+
+---
+
+### ⚠️ Security Warning
+
+> **Important:**  
+> Never commit your `.env` file to source control (GitHub).  
+> Always add `.env` to your `.gitignore` file to prevent accidental exposure of sensitive data.
+
