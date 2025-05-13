@@ -74,9 +74,5 @@ This project uses a `.env` file to securely store sensitive configuration detail
 
 ---
 
-### ⚠️ Security Warning
 
-> **Important:**  
-> Never commit your `.env` file to source control (GitHub).  
-> Always add `.env` to your `.gitignore` file to prevent accidental exposure of sensitive data.
 
